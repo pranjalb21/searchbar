@@ -1,0 +1,8 @@
+.searchResultItem{
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+.searchResultItem:hover{
+    background-color: rgb(239, 233, 233);
+}

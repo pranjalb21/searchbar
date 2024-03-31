@@ -1,0 +1,40 @@
+.input-wrapper{
+    background-color: white;
+    width: 100%;
+    border-radius: 10px;
+    min-height: 2.5rem;
+    padding: 10px;
+    box-shadow: 0 0 8px #ddd;
+    display: flex;
+    align-items: center;
+    white-space: wrap;
+    overflow-wrap: break-word;
+    flex-wrap: wrap;
+}
+
+input{
+    height: 100%;
+    background: transparent;
+    border: none;
+    font-size: 1.25rem;
+    margin-left: 5px;
+    outline: none;
+    max-width: 100%;
+}
+
+#search-icon{
+    color: royalblue;
+}
+.personBadge{
+    display: flex;
+    width: auto;
+    color: white;
+    background-color: cadetblue;
+    border-radius: 10px;
+    padding: 4px;
+    margin-right: 4px;
+}
+
+.personBadge #cancel{
+cursor: pointer;
+}

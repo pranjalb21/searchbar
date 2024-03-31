@@ -1,23 +1,31 @@
-import logo from './logo.svg';
+import { useState } from 'react';
 import './App.css';
+import SearchBar from './components/searchBar/SearchBar';
+import SearchResult from './components/searchResult/SearchResult';
 
 function App() {
+  const [searchResults, setSearchResults] = useState([]);
+  const [seletedPersons, setSelectedPersons] = useState([]);
+  const [input, setInput] = useState("");
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <div className="searchBar-container">
+        <SearchBar
+          setSearchResults={setSearchResults}
+          setInput={setInput}
+          input={input}
+          seletedPersons = {seletedPersons}
+          setSelectedPersons = {setSelectedPersons}
+        />
+        <SearchResult
+          searchResults={searchResults}
+          setSelectedPersons={setSelectedPersons}
+          setInput={setInput}
+          setSearchResults = {setSearchResults}
+          seletedPersons={seletedPersons}
+        />
+      </div>
+
     </div>
   );
 }

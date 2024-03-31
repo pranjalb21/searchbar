@@ -1,0 +1,12 @@
+.result-list{
+    min-width: 70%;
+    background: white;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 0 8px #ddd;
+    margin: 0.5rem;
+    border-radius: 10px;
+    max-height: 200px;
+    overflow-y: scroll;
+    align-self: start;
+}
